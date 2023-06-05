@@ -20,5 +20,14 @@ describe('sayHello', () => {
     });
     it('should return a string when called', () => {
         expect(typeof sayHello()).toBe("string");
-    })
+    });
+    it('should return "Hello, Jane!" when executed', () => {
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it('should return "Hello, Alex!" when executed', () => {
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it('should return "Hello, Pat!" when executed', () => {
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
 });
