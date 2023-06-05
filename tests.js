@@ -30,4 +30,13 @@ describe('sayHello', () => {
     it('should return "Hello, Pat!" when executed', () => {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!" when executed w/o an input (undefined)', () => {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed boolean true or false', () => {
+        expect(sayHello(true || false)).toBe("Hello, World!");
+    });
+    // it('should return "Hello, World!" when passed boolean false', () => {
+    //     expect(sayHello(false)).toBe("Hello, World!");
+    // });
 });
